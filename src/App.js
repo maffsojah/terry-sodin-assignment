@@ -41,9 +41,9 @@ class App extends Component {
   componentDidMount(){
   }
 
-  handleAddTask(project){
+  handleAddTask(task){
     let tasks = this.state.tasks;
-    tasks.push(project);
+    tasks.push(task);
     this.setState({tasks:tasks});
   }
 
@@ -54,11 +54,18 @@ class App extends Component {
     this.setState({tasks:tasks});
   }
 
+  handleEditTask(id){
+      this.setState({
+          title: event.target.value
+      });
+  }
+
   render() {
     return (
       <div className="App">
           <AddTask addTask={this.handleAddTask.bind(this)} />
-          <Tasks tasks={this.state.tasks} onDelete={this.handleDeleteTask.bind(this)} />
+          <Tasks tasks={this.state.tasks} onDelete={this.handleDeleteTask.bind(this)} handleEditTask={id=> this.handleEditTask(id)} />
+
           <hr />
       </div>
     );

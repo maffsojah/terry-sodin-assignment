@@ -11,3 +11,9 @@ $ npm install
 ```sh
 $ npm start
 ```
+
+## How it works
+### The program a task list
+-	The user adds a task name and adds it to a set category
+-	The added tasks are listed along with their categories
+-	The user can delete the task on the page and add new tasks
