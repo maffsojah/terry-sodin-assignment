@@ -17,3 +17,7 @@ $ npm start
 -	The user adds a task name and adds it to a set category
 -	The added tasks are listed along with their categories
 -	The user can delete the task on the page and add new tasks
+
+## Link to deployed App
+The app was deployed using surge.sh  
+The link is [Terry Sodin App](http://sodinterry.surge.sh)
